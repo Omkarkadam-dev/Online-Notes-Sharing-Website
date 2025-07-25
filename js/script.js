@@ -17,3 +17,25 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('[data-animate]').forEach(el => {
   observer.observe(el);
 });
+
+
+// Scroll animation without IntersectionObserver
+window.addEventListener('scroll', revealSteps);
+
+function revealSteps() {
+  const cards = document.querySelectorAll('.step-card');
+  const triggerBottom = window.innerHeight * 0.85;
+
+  cards.forEach((card, index) => {
+    const cardTop = card.getBoundingClientRect().top;
+
+    if (cardTop < triggerBottom) {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, index * 150); // delay per card
+    }
+  });
+}
+
+// Trigger once on page load
+revealSteps();
