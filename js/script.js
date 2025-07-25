@@ -104,3 +104,17 @@ window.addEventListener('scroll', () => {
     runCounters();
   }
 });
+
+
+// CTA Scroll Animation
+window.addEventListener('scroll', () => {
+  const cta = document.querySelector('.cta-card');
+  if (cta.getBoundingClientRect().top < window.innerHeight * 0.9) {
+    cta.classList.add('visible');
+  }
+});
+
+// CTA Button Click Action
+function handleCTA() {
+  alert("Redirecting to Sign-Up page... (Functionality coming soon!)");
+}
