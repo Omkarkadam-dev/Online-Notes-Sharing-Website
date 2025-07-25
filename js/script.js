@@ -39,3 +39,29 @@ function revealSteps() {
 
 // Trigger once on page load
 revealSteps();
+
+
+// Scroll animation
+window.addEventListener('scroll', showNotes);
+
+function showNotes() {
+  const cards = document.querySelectorAll('.note-card');
+  const trigger = window.innerHeight * 0.85;
+
+  cards.forEach((card, index) => {
+    const top = card.getBoundingClientRect().top;
+    if (top < trigger) {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, index * 100); // delay effect
+    }
+  });
+}
+
+// Show on load
+showNotes();
+
+// Button Action
+function viewAllNotes() {
+  alert("Redirecting to all notes page... (functionality coming soon)");
+}
