@@ -65,3 +65,42 @@ showNotes();
 function viewAllNotes() {
   alert("Redirecting to all notes page... (functionality coming soon)");
 }
+
+
+// Scroll animation for testimonials
+window.addEventListener('scroll', () => {
+  document.querySelectorAll('.testimonial-card').forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < window.innerHeight * 0.85) {
+      card.classList.add('visible');
+    }
+  });
+});
+
+// Counter animation
+const counters = document.querySelectorAll('.counter');
+
+const runCounters = () => {
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.parentElement.getAttribute('data-count');
+      const current = +counter.innerText;
+      const increment = Math.ceil(target / 80);
+
+      if (current < target) {
+        counter.innerText = current + increment;
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
+};
+
+window.addEventListener('scroll', () => {
+  const section = document.querySelector('#testimonials');
+  if (section.getBoundingClientRect().top < window.innerHeight * 0.9) {
+    runCounters();
+  }
+});
