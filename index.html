@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NoteNest - Hero Section</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NoteNest - Hero Section</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
-  <section class="hero">
-    <div class="blob"></div>
+    <section class="hero">
+        <div class="blob"></div>
 
-    <div class="hero-text">
-      <h1>Share. Learn. Succeed.</h1>
-      <p>Welcome to NoteNest – Your go-to platform to upload, share, and access high-quality study notes for free.</p>
-      <div class="buttons">
-        <button class="btn btn-primary" onclick="scrollToNotes()">Get Started</button>
-        <button class="btn btn-secondary">Browse Notes</button>
-      </div>
-    </div>
+        <div class="hero-text">
+            <h1>Share. Learn. Succeed.</h1>
+            <p>Welcome to NoteNest – Your go-to platform to upload, share, and access high-quality study notes for free.
+            </p>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="scrollToNotes()">Get Started</button>
+                <button class="btn btn-secondary">Browse Notes</button>
+            </div>
+        </div>
 
-    <div class="hero-image">
-      <img src="https://cdn-icons-png.flaticon.com/512/3035/3035996.png"  alt="Teamwork Illustration" />
+        <div class="hero-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/3035/3035996.png" alt="Teamwork Illustration" />
 
-    </div>
-  </section>
+        </div>
+    </section>
 
-  <!-- Dummy Notes Section for scroll -->
-  <section id="notes" style="padding: 4rem; text-align:center;">
-    <h2>Explore Notes Section</h2>
-    <p>Coming Soon...</p>
-  </section>
+    <!-- Dummy Notes Section for scroll -->
+    <section id="notes" style="padding: 4rem; text-align:center;">
+        <h2>Explore Notes Section</h2>
+        <p>Coming Soon...</p>
+    </section>
 
-  <script src="/js/script.js"></script>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2 class="section-title">Why Use NoteNest?</h2>
+        <p class="section-subtitle">Your ultimate study partner — smart, fast, and student-friendly!</p>
+
+        <div class="features-grid">
+            <div class="feature-card" data-animate>
+                <img src="https://cdn-icons-png.flaticon.com/512/1157/1157003.png" alt="Upload Notes">
+                <h3>Easy Upload</h3>
+                <p>Quickly upload notes in PDF, DOCX, or PPT formats to help others.</p>
+            </div>
+
+            <div class="feature-card" data-animate>
+                <img src="https://cdn-icons-png.flaticon.com/512/891/891462.png" alt="Smart Search">
+                <h3>Smart Search</h3>
+                <p>Find the exact notes you need by subject, topic, or keyword.</p>
+            </div>
+
+            <div class="feature-card" data-animate>
+                <img src="https://cdn-icons-png.flaticon.com/512/3262/3262699.png" alt="Secure Backend">
+                <h3>Secure Backend</h3>
+                <p>All notes and user data are safely stored using powerful server-side logic and database systems.</p>
+            </div>
+
+            <div class="feature-card" data-animate>
+                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Student Driven">
+                <h3>By Students, For Students</h3>
+                <p>Community-powered platform that helps each other succeed.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/script.js"></script>
 </body>
+
 </html>
