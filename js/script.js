@@ -118,3 +118,12 @@ window.addEventListener('scroll', () => {
 function handleCTA() {
   alert("Redirecting to Sign-Up page... (Functionality coming soon!)");
 }
+
+
+// Newsletter form submission
+document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('input').value;
+  alert(`Thank you for subscribing, ${email}!`);
+  this.reset();
+});
