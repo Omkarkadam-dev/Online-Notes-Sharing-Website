@@ -1,0 +1,143 @@
+:root {
+  --primary: #4e60ff;
+  --accent: #ff4e98;
+  --bg: #f8f9ff;
+  --text: #333;
+  --muted: #666;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.browse-header {
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+  background-color: #e9ecff;
+}
+
+.browse-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.browse-header p {
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.search-filter {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search-filter input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.tag {
+  background: var(--primary);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tag:hover {
+  background: #3c4ce3;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.note-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+.note-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.note-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.note-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  background-color: var(--accent);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.download-btn {
+  background-color: var(--primary);
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #3c4ce3;
+}
+
+@media (max-width: 600px) {
+  .browse-header h1 {
+    font-size: 2rem;
+  }
+
+  .note-card {
+    padding: 1.4rem;
+  }
+
+  .download-btn {
+    padding: 0.5rem 0.8rem;
+  }
+}

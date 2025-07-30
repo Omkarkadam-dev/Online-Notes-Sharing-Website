@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Notes - NoteNest</title>
+  <link rel="stylesheet" href="/css/browser.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="browse-header">
+  <h1>📚 Browse Notes</h1>
+  <p>Explore student-shared notes across multiple streams and subjects.</p>
+  
+  <div class="search-filter">
+    <input type="text" id="search" placeholder="Search by title or subject..." />
+    <div class="filters">
+      <span class="tag">All</span>
+      <span class="tag">BCA</span>
+      <span class="tag">BCom</span>
+      <span class="tag">Engineering</span>
+      <span class="tag">Science</span>
+    </div>
+  </div>
+</header>
+
+<main class="notes-grid" id="notes-grid">
+  <!-- Note Cards -->
+  <div class="note-card">
+    <h3>DBMS Normalization</h3>
+    <p>Clean and concise notes explaining 1NF, 2NF, 3NF, and BCNF with examples.</p>
+    <div class="note-footer">
+      <span class="badge">BCA</span>
+      <a href="#" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="note-card">
+    <h3>Financial Accounting Basics</h3>
+    <p>Summarized notes on journal entries, ledgers, and balance sheet concepts.</p>
+    <div class="note-footer">
+      <span class="badge">BCom</span>
+      <a href="#" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <div class="note-card">
+    <h3>Java OOP Concepts</h3>
+    <p>Notes on inheritance, polymorphism, encapsulation, and abstraction in Java.</p>
+    <div class="note-footer">
+      <span class="badge">Engineering</span>
+      <a href="#" class="download-btn">Download</a>
+    </div>
+  </div>
+
+  <!-- More cards as needed -->
+</main>
+
+<script src="/js/browser.js"></script>
+</body>
+</html>
