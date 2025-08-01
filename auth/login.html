@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NoteNest</title>
+  <link rel="stylesheet" href="/css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="login-wrapper">
+  <div class="login-card">
+    <h2>Login to <span>NoteNest</span></h2>
+    <form id="login-form">
+      <div class="input-group">
+        <input type="email" required />
+        <label>Email Address</label>
+      </div>
+
+      <div class="input-group password-group">
+        <input type="password" id="password" required />
+        <label>Password</label>
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <button type="submit">Login</button>
+      <p class="signup-link">Don’t have an account? <a href="/auth/register.html">Sign up</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="/js/login.js"></script>
+</body>
+</html>
