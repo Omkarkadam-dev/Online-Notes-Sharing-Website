@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Notes - NoteNest</title>
+  <link rel="stylesheet" href="/css/upload.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<section class="upload-wrapper">
+  <div class="upload-card">
+    <h2>Upload Your Notes</h2>
+    <form id="upload-form">
+      <div class="input-group">
+        <input type="text" id="title" required />
+        <label>Note Title</label>
+      </div>
+
+      <div class="input-group">
+        <select id="subject" required>
+          <option value="" disabled selected>Select Subject</option>
+          <option value="BCA">BCA</option>
+          <option value="Engineering">Engineering</option>
+          <option value="Commerce">Commerce</option>
+          <option value="Science">Science</option>
+        </select>
+      </div>
+
+      <div class="input-group file-upload">
+        <input type="file" id="note-file" accept=".pdf,.doc,.docx" required />
+        <label for="note-file" class="file-label">Choose File</label>
+        <span id="file-name">No file selected</span>
+      </div>
+
+      <textarea id="description" placeholder="Add short description..." rows="4" required></textarea>
+
+      <button type="submit">Upload Note</button>
+    </form>
+  </div>
+</section>
+
+<script src="/js/upload.js"></script>
+</body>
+</html>

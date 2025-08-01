@@ -415,7 +415,7 @@ body {
 
 .view-all-btn button {
     background-color: var(--primary);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 0.8rem 2rem;
     font-size: 1rem;
