@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - NoteNest</title>
+  <link rel="stylesheet" href="/css/register.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<div class="signup-wrapper">
+  <div class="signup-card">
+    <h2>Create Your <span>NoteNest</span> Account</h2>
+    <form id="signup-form">
+      <div class="input-group">
+        <input type="text" id="name" required />
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" required />
+        <label>Email Address</label>
+      </div>
+
+      <div class="input-group password-group">
+        <input type="password" id="password" required />
+        <label>Password</label>
+        <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+      </div>
+
+      <div class="input-group password-group">
+        <input type="password" id="confirm-password" required />
+        <label>Confirm Password</label>
+        <span class="toggle-password" onclick="togglePassword('confirm-password')">👁️</span>
+      </div>
+
+      <button type="submit">Sign Up</button>
+      <p class="login-link">Already have an account? <a href="/auth/login.html">Login</a></p>
+    </form>
+  </div>
+</div>
+
+<script src="/js/register.js"></script>
+</body>
+</html>
