@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - NoteNest</title>
+  <link rel="stylesheet" href="/frontend/css/dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="dashboard-header">
+  <h1>📁 Your Dashboard</h1>
+  <p>Manage your uploaded notes and track your contributions.</p>
+
+  <div class="dashboard-tools">
+    <input type="text" id="search" placeholder="Search notes..." />
+    <select id="filter-subject">
+      <option value="">All Subjects</option>
+      <option value="BCA">BCA</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Science">Science</option>
+      <option value="Commerce">Commerce</option>
+    </select>
+  </div>
+</header>
+
+<main class="notes-container" id="notes-container">
+  <!-- Sample Note Card -->
+  <div class="note-card">
+    <h3>JavaScript Loops</h3>
+    <p class="subject-tag">BCA</p>
+    <p class="desc">A guide to for, while, and do-while loops in JavaScript.</p>
+    <div class="note-footer">
+      <span class="date">Uploaded: 27 July 2025</span>
+      <div class="actions">
+        <a href="#" class="view-btn">📄 View</a>
+        <button class="delete-btn">🗑 Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- More note cards will be dynamically inserted here -->
+</main>
+
+<script src="/frontend/js/dashboard.js"></script>
+</body>
+</html>

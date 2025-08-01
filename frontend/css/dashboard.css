@@ -1,0 +1,158 @@
+:root {
+  --primary: #4e60ff;
+  --accent: #ff4e98;
+  --bg: #f8f9ff;
+  --text: #333;
+  --muted: #666;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dashboard-header {
+  padding: 2.5rem 2rem 1rem;
+  text-align: center;
+  background-color: #eaefff;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+}
+
+.dashboard-header p {
+  color: var(--muted);
+}
+
+.dashboard-tools {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.dashboard-tools input,
+.dashboard-tools select {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 250px;
+  outline: none;
+}
+
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.note-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  position: relative;
+  animation: fadeInUp 0.5s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+.note-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+
+.subject-tag {
+  font-size: 0.85rem;
+  color: var(--white);
+  background-color: var(--accent);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.7rem;
+}
+
+.note-card .desc {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.note-footer .actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.view-btn,
+.delete-btn {
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+}
+
+.view-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.delete-btn {
+  background: #ff4e4e;
+  color: white;
+}
+
+.view-btn:hover {
+  background: #3c4ce3;
+}
+
+.delete-btn:hover {
+  background: #d63b3b;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-tools {
+    flex-direction: column;
+    align-items: center;
+  }
+}
