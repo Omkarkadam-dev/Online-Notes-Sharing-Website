@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Reports</title>
+  <link rel="stylesheet" href="/Admin/css/reports.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="reports-section">
+  <h2>🚨 User Reports</h2>
+
+  <div class="search-bar">
+    <input type="text" id="reportSearch" placeholder="Search by note or user..." />
+  </div>
+
+  <div class="table-wrapper">
+    <table class="report-table">
+      <thead>
+        <tr>
+          <th>Note</th>
+          <th>Reported By</th>
+          <th>Reason</th>
+          <th>Status</th>
+          <th>Time</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="reportTableBody">
+        <!-- Injected by JS -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script src="/Admin/js/reports.js"></script>
+</body>
+</html>

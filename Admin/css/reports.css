@@ -1,0 +1,124 @@
+:root {
+  --bg-dark: #12141c;
+  --card-dark: #1e1f29;
+  --text: #f0f0f0;
+  --muted: #999;
+  --accent: #4e60ff;
+  --danger: #ff4e4e;
+  --success: #4caf50;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text);
+}
+
+.reports-section {
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.reports-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
+}
+
+.search-bar {
+  margin-bottom: 1rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #1e1f29;
+  color: var(--text);
+  font-size: 1rem;
+  outline: none;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-dark);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.report-table thead {
+  background-color: #1a1b21;
+}
+
+.report-table th,
+.report-table td {
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.report-table th {
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+}
+
+.report-table tbody tr {
+  border-bottom: 1px solid #2a2c35;
+  transition: 0.3s ease;
+}
+
+.report-table tbody tr:hover {
+  background-color: #2a2c35;
+}
+
+.status-pending {
+  color: var(--danger);
+  font-weight: 500;
+}
+
+.status-resolved {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.action-btn {
+  background: var(--accent);
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.action-btn:hover {
+  background: #3b4ed9;
+}
+
+.delete-btn {
+  background: var(--danger);
+}
+
+.delete-btn:hover {
+  background: #d84343;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .report-table th,
+  .report-table td {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
