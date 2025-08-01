@@ -9,37 +9,46 @@
 </head>
 <body>
 
-<section class="upload-wrapper">
+<div class="upload-wrapper">
   <div class="upload-card">
-    <h2>Upload Your Notes</h2>
+    <h2>📤 Upload Notes to <span>NoteNest</span></h2>
+
     <form id="upload-form">
+      <!-- Note Title -->
       <div class="input-group">
         <input type="text" id="title" required />
         <label>Note Title</label>
       </div>
 
+      <!-- Subject -->
       <div class="input-group">
         <select id="subject" required>
           <option value="" disabled selected>Select Subject</option>
           <option value="BCA">BCA</option>
           <option value="Engineering">Engineering</option>
-          <option value="Commerce">Commerce</option>
           <option value="Science">Science</option>
+          <option value="Commerce">Commerce</option>
         </select>
       </div>
 
-      <div class="input-group file-upload">
-        <input type="file" id="note-file" accept=".pdf,.doc,.docx" required />
-        <label for="note-file" class="file-label">Choose File</label>
-        <span id="file-name">No file selected</span>
+      <!-- File Upload -->
+      <div class="file-drop" id="file-drop">
+        <p>📎 Drag & drop a file here, or <span id="browse">browse</span></p>
+        <input type="file" id="file-input" accept=".pdf,.doc,.docx" hidden required />
+        <div id="file-preview" class="file-preview">No file selected</div>
       </div>
 
-      <textarea id="description" placeholder="Add short description..." rows="4" required></textarea>
+      <!-- Description -->
+      <div class="input-group">
+        <textarea id="description" rows="4" required></textarea>
+        <label>Description</label>
+      </div>
 
+      <!-- Upload -->
       <button type="submit">Upload Note</button>
     </form>
   </div>
-</section>
+</div>
 
 <script src="/js/upload.js"></script>
 </body>
