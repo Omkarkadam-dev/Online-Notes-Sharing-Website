@@ -14,8 +14,7 @@
 
   <nav id="admin-nav" class="nav-links">
     <a href="#">Dashboard</a>
-    <a href="#">Users</a>
-    <a href="#">Notes</a>
+    <a href="/Admin/html/users.html">Users</a>
     <a href="#">Reports</a>
     <a href="#">Settings</a>
     <a href="#" class="logout">Logout</a>
@@ -26,6 +25,87 @@
     <div class="hamburger" id="hamburger">&#9776;</div>
   </div>
 </header>
+
+
+<div class="dashboard-container">
+  <section class="dashboard-header">
+    <h1>Welcome back, Admin 👋</h1>
+    <p>Here's what's happening in NoteNest today:</p>
+  </section>
+
+  <section class="dashboard-cards">
+    <div class="card">
+      <div class="card-icon">👥</div>
+      <div class="card-content">
+        <h3>2,450</h3>
+        <p>Total Users</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📄</div>
+      <div class="card-content">
+        <h3>9,320</h3>
+        <p>Notes Uploaded</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">📥</div>
+      <div class="card-content">
+        <h3>15.7K</h3>
+        <p>Downloads</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🚨</div>
+      <div class="card-content">
+        <h3>34</h3>
+        <p>Reports Flagged</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<section class="activity-section">
+  <h2>🧾 User Activity Feed</h2>
+  <div class="activity-feed" id="activity-feed">
+    <!-- Activity items inserted by JS -->
+  </div>
+</section>
+
+
+<footer class="admin-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h2>📘 NoteNest <span>Admin</span></h2>
+      <p>Admin panel for managing users, notes, and reports securely & efficiently.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="/Admin/html/users.html">Users</a></li>
+        <li><a href="reports.html">Reports</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: admin@notenest.com</p>
+      <p>Support: +91 90000 00000</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 NoteNest Admin Panel. All rights reserved.</p>
+  </div>
+</footer>
+
 
 <script src="/Admin/js/main.js"></script>
 </body>

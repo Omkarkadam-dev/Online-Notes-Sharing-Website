@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Manage Users</title>
+  <link rel="stylesheet" href="/Admin/css/users.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<section class="users-section">
+  <h2>👥 Manage Users</h2>
+
+  <div class="search-bar">
+    <input type="text" id="userSearch" placeholder="Search users by name or email..." />
+  </div>
+
+  <div class="table-wrapper">
+    <table class="user-table">
+      <thead>
+        <tr>
+          <th>User</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- JS will insert users here -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script src="/Admin/js/users.js"></script>
+</body>
+</html>
