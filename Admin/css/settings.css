@@ -1,0 +1,115 @@
+:root {
+  --bg-dark: #12141c;
+  --card-dark: #1e1f29;
+  --text: #f0f0f0;
+  --muted: #888;
+  --accent: #4e60ff;
+  --danger: #ff4e4e;
+  --success: #4caf50;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text);
+}
+
+.settings-section {
+  padding: 2rem 1.5rem;
+  max-width: 600px;
+  margin: auto;
+  background: var(--card-dark);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.settings-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #1c1d26;
+  color: var(--text);
+  outline: none;
+}
+
+.form-group input[disabled] {
+  background: #2b2c38;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-save {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-save:hover {
+  background-color: #3b4ed9;
+}
+
+.btn-reset {
+  background-color: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-reset:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .form-actions {
+    flex-direction: column;
+  }
+}
